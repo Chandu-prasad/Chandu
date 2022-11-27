@@ -1,0 +1,77 @@
+<html>
+    <head>
+    
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<script type="text/javascript" src="javascript.js.js"></script>
+
+        <title>Html Forms</title>
+    </head>
+    <body>
+        
+            <nav navbar class="container">
+                <h1>Patient Details</h1>
+            </nav>
+            <div>
+                <label>Patient Name *</label>
+                <input type="text" id="patientName" placeholder="Enter Name" required>
+                <p id="name"></p>
+            </div><br/>
+            <div>
+                <label>Patient Email *</label>
+                <input type="email" id="patientEmail" placeholder="Enter Email" required>
+                <p id="email"></p>
+            </div><br/>
+            <div>
+                <label>Patient Place*</label>
+                <input  type="text" id="PatientPlace" placeholder="Enter Place" required>
+                <p id="place"></p>
+            </div><br/>
+            <div>
+                <label>Patient Number *</label>
+                <input type="text" id="PatientNumber" placeholder="Enter Number" required>
+                <p id="number"></p>
+            </div><br/>
+            <div>
+                <label>Patient DOB*</label>
+                <input type="date" id="PatientDateOfBirth" placeholder="Enter DOB" 
+                min="1900-01-01" max="2022-10-01" required>
+                <p id="dob"></p>
+            </div><br/>
+            <div>
+                <label> Gender *</label required><br>
+                <input  type="radio"  name="male">
+                <label>Male</label><br>
+                <input  type="radio"  name="male">
+                <label>Female</label><br>
+                <input  type="radio"  name="male">
+                <label>Other</label>
+                <p id="gender"></p>
+            </div><br/>
+            <div>
+            <lable>Choose  Hpspatils Citys *</label required>
+            <input type = "checkbox">Hyd 
+            <input type = "checkbox">Bnglr 
+            <input type = "checkbox">Chennai
+            <input type = "checkbox">KKD 
+            <input type = "checkbox">Vizag 
+            <p id="citys"></p>
+            </div><br/>
+            <div>
+            <lable>Select Blood Group *</lable>
+           <select  required>
+          <option value=""></option>
+          <option value="">A+</option>
+          <option value="">A-</option>
+          <option value="">B+</option>
+          <option value="">O+</option>
+          <option value="">O-</option>
+          <option value="">AB+</option>
+          <option value="">AB-</option>
+          </select>
+          <p id="blood"></p>
+            </div><br/>
+            <button type="submit" id="button" name="button" onclick="formSubmit()">Sumbit</button>
+       
+    </body>
+</html>
